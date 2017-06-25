@@ -23,7 +23,7 @@ Many of these steps you can do in Git command line but let's keep it simple for 
   b. To pull git hub data you may need to configure your git repo
      git config --global http.sslverify false
 5. Next step is  git Fetch for any new updates
-TESt
+
   
 
 pwd  Present working directory
