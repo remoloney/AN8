@@ -22,7 +22,7 @@ Many of these steps you can do in Git command line but let's keep it simple for 
   a. This may work smoothly for you or cause a series of different error messages. What you are doing is connecting to git and pulling      all the info from that repository on to your desktop. Pretty powerful stuff but can be buggy. 
   b. To pull git hub data you may need to configure your git repo
      git config --global http.sslverify false
-5. Next step is 
+5. Next step is  git Fetch for any new updates
   
 
 pwd  Present working directory
