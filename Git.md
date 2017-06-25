@@ -3,10 +3,10 @@ Lets say you have a folder called X and you save a file into of your own called 
 from Git without losing that material. There is a way to do it but it's a few steps and just like Salsa or Swing dancing it can take a bit
 to get use to. 
 
-Let's start with Downloading Gitbash
+#### Let's start with Downloading Gitbash
 Gitbash is like command line and its a way to manage your own repositories on your PC. Think of it like Github but just for you on your device.
 
-You can download Gitbash here:
+*You can download Gitbash here:
 https://git-scm.com/downloads
 
 There are few things to learn when using Git on your device one is command line language the other is version control or workflows the other is 
@@ -19,8 +19,10 @@ Many of these steps you can do in Git command line but let's keep it simple for 
   a. you can navigate to your folder using cd path/folder/ 
 3. once in your folder directory type "Git init" this initializes a git repository in that folder.
 4. git pull https://github.com/Morrisdata/DataScience101.git
-  a.. This may work smoothly for you or cause a series of different error messages. What you are doing is connecting to git and pulling all the
-      info from that repository on to your desktop. Pretty powerful stuff but can be buggy. 
+  a. This may work smoothly for you or cause a series of different error messages. What you are doing is connecting to git and pulling      all the info from that repository on to your desktop. Pretty powerful stuff but can be buggy. 
+  b. To pull git hub data you may need to configure your git repo
+     git config --global http.sslverify false
+5. Next step is 
   
 
 pwd  Present working directory
