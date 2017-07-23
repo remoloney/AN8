@@ -1,0 +1,21 @@
+The question asked is What Tequila products are not selling or sold.
+
+This brings us to the number 1 thing in Data Analytics which is identifiying the problem. 
+
+Does the client want to know which ones are not selling well, whichs ones we carry but have not sold, 
+Maybe they want to know which products vendors have but we do not sell. 
+And indeed what they are looking for is which items the vendor offers or that we have in our product line but are not sold.
+
+So #1 problem is not code but getting the question dialed in, that can be extremely hard to do with a client even if you have had an hour
+long meeting or several meetings to gather requirements. Be prepared to guess come up with a great answer to the wrong question and start over. 
+
+Having said that here is the code: remember what we truly want to see is products we have in our products table but we do not carry them in our stores. 
+
+
+335 items were not sold
+SELECT item_description 
+FROM products a 
+LEFT JOIN sales b 
+ON a.item_no = b.item
+WHERE a.category_name like '%TEQUILA%' 
+AND  b.store IS null
