@@ -10,14 +10,14 @@ FROM sales
 WHERE DATE = '2014-11-13'
 LIMIT 1000
 
-# example of Rank and order by
+#example of Rank and order by
 SELECT DISTINCT category_name, total, 
 rank() OVER (PARTITION BY total ORDER BY category_name DESC) 
 FROM sales
 WHERE DATE = '2014-11-13'
 LIMIT 1000
 
-# lets look at three window functions side by side to see what they do
+#lets look at three window functions side by side to see what they do
 
 SELECT store, Category_name, sum(total),
 ROW_NUMBER() OVER(ORDER BY store),
@@ -38,8 +38,8 @@ SELECT total, sum(total) OVER (ORDER BY total DESC)
 FROM sales 
 LIMIT 1000
 
-# if you have to filter the results you will need to place this process in a subselect. 
-# over is not allowed in Group by or having
+#if you have to filter the results you will need to place this process in a subselect. 
+#over is not allowed in Group by or having
 SELECT rnk,store, category_name, total, date
 FROM
   (SELECT  store, category_name, total, date,
