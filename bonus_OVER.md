@@ -10,7 +10,7 @@ FROM sales
 WHERE DATE = '2014-11-13'
 LIMIT 1000
 
-# exampdle of Rank and order by
+# example of Rank and order by
 SELECT DISTINCT category_name, total, 
 rank() OVER (PARTITION BY total ORDER BY category_name DESC) 
 FROM sales
