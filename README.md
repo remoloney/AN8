@@ -13,6 +13,6 @@ FALL  Data Analytics Course
 |10/10|Creating Local Database|10/12|Mozilla Firefox Presenations|
 |10/17|Fundamentals of Tableau|10/19|Visualization and Text Manipulation|
 |10/24|Calculations and Analysis in Tableau|10/26|Dashboarding in Tableau|
-|8/31|Flex day, review, catchup, workshop|11/02|Presentation|
+|10/31|Flex day, review, catchup, workshop|11/02|Presentation|
 
 [Exit Tickets](https://docs.google.com/a/generalassemb.ly/forms/d/e/1FAIpQLSdHWXjpZ-3AQdrVzwoTE_w9IUNFJmWSBgrT8tgWtJxQtVLHyw/viewform)
