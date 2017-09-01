@@ -15,4 +15,4 @@ FALL  Data Analytics Course
 |10/24|Calculations and Analysis in Tableau|10/26|Dashboarding in Tableau|
 |10/31|Flex day, review, catchup, workshop|11/02|Presentation|
 
-[Exit Tickets](https://docs.google.com/a/generalassemb.ly/forms/d/e/1FAIpQLSdHWXjpZ-3AQdrVzwoTE_w9IUNFJmWSBgrT8tgWtJxQtVLHyw/viewform)
+[Exit Tickets](https://docs.google.com/a/generalassemb.ly/forms/d/e/1FAIpQLSfIdEYeCtLmkL1gLk43iemNMEvXjJGM8nWZ57bnHUk1lxn5bw/viewform?fbzx=-2335729851373640700)
