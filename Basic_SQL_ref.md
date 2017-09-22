@@ -1,4 +1,5 @@
 |Clause       | Definition                                      |
+|-------------|-------------------------------------------------|
 |**SELECT**   |      - Fields you want to see in your results   |
 |**FROM**     |  - Table where fields come from                 |
 |**WHERE**    |  - Filters for your results                     |
