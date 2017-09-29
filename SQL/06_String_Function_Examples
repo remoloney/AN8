@@ -1,0 +1,103 @@
+
+/*
+SELECT item, description
+FROM sales
+LIMIT 100 */
+
+-- CONCAT(field1, field2, field3…)
+
+SELECT CONCAT(item,' -  ',description)
+FROM sales
+LIMIT 100
+
+
+-- LENGTH(field1)
+
+SELECT LENGTH(CONCAT(item,' - ',description))
+FROM sales
+LIMIT 100
+
+-- LOWER: Converts a field or expression to lowercase.
+Syntax: LOWER(field1)
+Syntax: UPPER(field1)
+
+SELECT UPPER(CONCAT(item,' -  ',description))
+FROM sales
+LIMIT 100
+
+
+
+
+LEFT: Selects characters from left side.
+RIGHT: Selects characters from right side.
+
+LEFT(field1, length)
+
+SELECT CONCAT(item,' -  ',description),  
+LEFT(LOWER(CONCAT(item,' -  ',description)),5)
+FROM sales
+LIMIT 100
+
+
+SUBSTRING(field1, starting_position, number_of_characters)
+
+SELECT SUBSTRING((CONCAT(item,' -  ',description),9,35)
+FROM sales
+LIMIT 100
+
+Left/Right Trim:
+LTRIM(field1)
+
+SELECT LTRIM(CONCAT(item,' -  ',description))
+FROM sales
+LIMIT 100
+
+
+
+TRIM: Removes specified characters from start of field, ending part of field, or both.
+SYNTAX
+TRIM( leading ‘characters’, from field1)
+TRIM( trailing ‘characters’, from field1)
+TRIM( both ‘characters’, from field1)	
+EXAMPLE
+SELECT 
+description, 
+TRIM( Leading 'A' from description), 
+TRIM (TRAILING 'a' from description), 
+TRIM(BOTH 'A' FROM description)
+FROM sales
+LIMIT 100
+
+
+REPLACE(field_to_change,  content_to_replace,  new_content)
+EXAMPLE
+SELECT REPLACE(description, 'Absolut', 'Grey Goose')
+FROM sales
+LIMIT 100
+
+ 
+
+ 
+
+CURRRENT_ DATE returns the current date from the system.
+
+SELECT item, total, date, CURRENT_DATE
+FROM sales
+LIMIT 100
+
+AGE returns the difference between two dates. 
+SYNTAX
+Age( date1, date2)
+EXAMPLE
+SELECT item, total, date, CURRENT_DATE, age(date, CURRENT_DATE)
+FROM sales
+LIMIT 100
+
+How are dates used in your department? 
+●	Billing date by day of week? 
+●	Changes in day of week by year? 
+●	Comparison of days of the week by two dates? 
+●	Estimation based on day of week? 
+●	Estimation based on previous year? 
+●	How many customers on a given day? 
+●	Order date to ship date?
