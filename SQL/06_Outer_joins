@@ -1,0 +1,48 @@
+------------------------------------------------------
+--              COUNTIES                            --
+------------------------------------------------------
+
+
+-- 99 rows
+SELECT DISTINCT
+county
+FROM counties
+
+-- 100 rows
+SELECT DISTINCT
+county
+FROM sales
+
+-- INNER JOIN 99 rows
+SELECT DISTINCT
+a.county,
+b.county
+FROM counties a
+JOIN sales b
+ON a.county = b.county
+
+-- LEFT JOIN 100 ROWS
+SELECT DISTINCT
+a.county,
+b.county
+FROM sales a
+LEFT JOIN counties b
+ON a.county = b.county
+
+-- RIGHT JOIN
+SELECT DISTINCT
+a.county,
+b.county
+FROM sales a
+RIGHT JOIN counties b
+ON a.county = b.county
+
+--What are the NULLS?
+SELECT DISTINCT
+a.*,
+b.county
+FROM sales a
+LEFT JOIN counties b
+ON a.county = b.county
+WHERE a.county IS NULL
+LIMIT 100
